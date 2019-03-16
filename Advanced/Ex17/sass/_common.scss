@@ -1,0 +1,12 @@
+.wrapper {
+    font-family: 'Lato', sans-serif;
+}
+.clear {
+    clear: both;
+}
+@mixin layout (){
+    background-color: $bgColor;
+    text-align: center;
+    padding: 10px;
+    color: $textColor;
+}

@@ -1,0 +1,248 @@
+
+/* --------------------------  START :: HOME -------------------------- */
+#products {
+    width: 88%;
+    margin: 110px auto 85px;
+}
+#products h3 {
+    font-weight: 300;
+    font-size: 40px;
+    margin-left: 1%;
+}
+.category-section {
+    margin-bottom: 45px;
+}
+.products-section {
+    margin-top: 20px;
+}
+.product {
+    display: inline-block;
+    height: 415px;
+    width: calc((100% - 110px) / 4);
+    margin : 0 13.75px;
+    cursor: pointer;
+    border: 1px solid;
+    margin-bottom: 20px;
+    background-color: white;
+}
+.product-image img {
+    width: 64%;
+    height: 300px;
+    margin: 10px 18%;
+}
+.product-content {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+}
+.product-content h5 {
+    font-weight: 400;
+    color: rgb(74, 74, 74);
+}
+.product-content h5, .product-content h4 {
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+ }
+.product-content h4 {
+    font-weight: 600;
+    margin: 3px 0;
+    color: rgb(90, 35, 72);
+}
+.rating {
+    font-size: 18px;
+}
+.fas{
+    color: white;
+}
+.checked {
+    color: rgb(243, 165, 54);
+}
+/* --------------------------  END :: HOME -------------------------- */
+/* --------------------------  START :: PRODUCT -------------------------- */
+#product-description {
+    width: 95%;
+    margin: 0 auto;
+}
+.return-back {
+    margin: 40px 0;
+}
+.return-back h3 > a {
+    color: rgb(90, 35, 72);
+}
+.return-back i {
+    font-size: 25px;
+    color: rgb(90, 35, 72);
+}
+.return-back h3{
+    display: inline-block;
+    margin: 0 2%;
+}
+#product-description {
+    width: 85%;
+    margin: 0 auto;
+}
+.description-image {
+    float: left;
+    width: 50%;
+    border: 1px solid;
+}
+.description-image img {
+    display: block;
+    height: 575px;
+    width: 55%;
+    margin: 50px auto;
+}
+.description-content {
+    float: right;
+    width: 48%;
+}
+#brand-id {
+    font-size: 25px;
+    color: rgb(74, 74, 74);
+}
+.size, .color {
+    display: block;
+    font-size: 20px;
+}
+.short-review h5 {
+    padding: 10px 0;
+    font-size: 16px;
+}
+#description-main {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+#add-to-cart, #buy-now {
+    display: inline-block;
+    width: calc((100% - 50px) / 2);
+    height: 57px;
+    font-weight: 400;
+    border: 1px solid;
+    font-size: 22px;
+    color: white;
+    background-color: rgb(90, 35, 72);
+}
+.size, .color {
+    font-weight: 600;
+    color: rgb(90, 35, 72);
+}
+#size, #color {
+    color: black;
+}
+#buy-now {
+    color: rgb(90, 35, 72);
+    width: calc((100% - 50px) / 3);
+    background-color: white;
+    margin-left: 30px;
+}
+#product-name {
+    color: rgb(90, 35, 72);
+    font-size: 50px;
+}
+.description-content h4 {
+    font-size: 42px;
+    margin-top: 20px;
+}
+.description-button {
+    margin: 30px 0;
+}
+.review-section {
+    margin: 45px 0;
+}
+.review-section h3 {
+    font-size: 27px;
+    font-weight: 400;
+    color: rgb(90, 35, 72);
+}
+
+.review  {
+    display: none;
+    font-size: 13px;
+    padding: 25px 0 10px 0;
+    border-top: 0.5px solid;
+}
+.review:nth-of-type(1) {
+    border-top: none;
+}
+.star {
+    margin-left: 3%;
+}
+.review-content {
+    margin: 10px 0 15px;
+}
+.deliver {
+    font-size: 20px;
+}
+.deliver p {
+    display: inline-block;
+    color: rgb(90, 35, 72);
+}
+.bank {
+    margin: 20px 0;
+}
+.bank p {
+    margin: 10px 0;
+    color: rgb(78, 0, 27);
+}
+.rating-stars-desc {
+    float: left;
+    width: 35%;
+    font-size: 30px;
+    margin: 15px 0;
+}
+.rating-stars i{
+    color: rgb(243, 165, 54);
+}
+.rating-stars-desc i{
+    color: rgb(243, 165, 54);
+}
+.short-review h5 {
+    float: right;
+    margin: 20px 0;
+    font-size: 17px;
+    margin-left: 10px;
+    width: 63%;
+}
+.read-more label{
+    float: right;
+    cursor: pointer;
+    text-decoration: underline;
+    color: rgb(90, 35, 72);
+    font-size: 12px;
+}
+/* --------------------------  END :: PRODUCT -------------------------- */
+/* --------------------------  START :: RESPONSIVE -------------------------- */
+
+@media only screen and (min-width:1px) and (max-width:600px) {
+    .product {
+        width: 100%;
+        margin : 0;
+        margin-bottom: 20px;
+    }
+    .description-content {
+        margin: 30px 0;
+    }
+    .rating-stars-desc, .short-review h5, .description-image, .description-content{
+        float: none;
+        width: 100%;
+    }
+    #add-to-cart, #buy-now {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+    }
+    .description-image img {
+         height: 485px;
+     }
+     .description-content h4 {
+         font-size: 32px;
+     }
+     .short-review h5 {
+         margin-left: 0;
+     }
+}
+
+/* --------------------------  END :: RESPONSIVE -------------------------- */
+

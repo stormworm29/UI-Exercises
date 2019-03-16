@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Indian History</title>
+        <link rel = "stylesheet" href = "css/index.css" type = "text/css"/>
+        <link href = "https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel = "stylesheet"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class = "wrapper">
+            <!-- ------------------------------ Header Section Starts ------------------------------ -->
+            <header>
+                <i class="fas fa-bars"></i>
+                <h1>Indian History</h1>
+            </header>
+            <!-- ------------------------------ Header Section Ends ------------------------------ -->
+            <!-- ------------------------------ Main Content Section Starts ------------------------------ -->
+            <div class = "main-wrapper">
+                <div class = "main-content">
+                    <!-- ------------------------------ Post Section Starts ------------------------------ -->
+                    <div class = "posts-pane">
+                        <h1>Places to Visit</h1>
+                        <div class = "posts">
+                            <ul>
+                                <li id = "india-gate">
+                                    <h2>India Gate</h2>
+                                    <p>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                    </p>
+                                </li>
+                                <li id = "red-fort">
+                                    <h2>Red Fort</h2>
+                                    <p>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                    </p>
+                                </li>
+                                <li id = "gateway-india">
+                                    <h2>Gateway of India</h2>
+                                    <p>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                    </p>
+                                </li>
+                                <li id = "taj-mahal">
+                                    <h2>Taj Mahal</h2>
+                                    <p>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- ------------------------------ Post Section Ends ------------------------------ -->
+                    <!-- ------------------------------ Trip Planner Section Starts ------------------------------ -->
+                    <div class = "trip-planner">
+                        <h1> Plan Your Travel</h1>
+                        <div class = "trip-inputs">
+                            <input type = "text" placeholder = "Start Date" id = "start-date" onfocus = "type = 'date'"/>
+                            <input type = "text" placeholder = "End Date" id = "end-date" onfocus = "type = 'date'" />
+                            <input type = "text" list = "data-list" id = "state-input" placeholder = "Select State"/>
+                            <datalist id = "data-list">
+                                <option value = "Chennai">
+                                <option value = "Banglore">
+                            </datalist>
+                            <button class = "travel-modes">BUS</button>
+                            <button class = "travel-modes">TRAIN</button>
+                            <button class = "travel-modes">CAB</button>
+                            <div class = "clear-fix"></div>
+                            <div class = "submit">
+                                <button class = "input-submit" onclick = "getTripDetails()">SUBMIT</button>
+                            </div>
+                            <div class = "clear-fix"></div>
+                        </div>
+                    </div>
+                    <div class = "clear-fix"></div>
+                    <!-- ------------------------------ Trip Planner Section Ends ------------------------------ -->
+                </div>
+            </div>
+            <!-- ------------------------------ Main Content Section Ends ------------------------------ -->
+        </div>
+        <script src = "js/index.js"></script>
+    </body>
+</html>

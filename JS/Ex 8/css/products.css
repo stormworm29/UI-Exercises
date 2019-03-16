@@ -1,0 +1,76 @@
+input , select, textarea{
+    border: 1px solid black;
+    padding: 10px;
+    outline: none;
+}
+/* ------------------------------------- START :: ADD PRODUCT SECTION ------------------------------------- */
+.add-product {
+    width: 45%;
+    margin: 75px auto;
+    color: rgb(90, 35, 72);
+}
+.product-header h2{
+    text-align: center;
+    font-weight: 300;
+    font-size: 50px;
+    margin: 20px 0;
+}
+.product-input {
+    margin: 20px 0;
+}
+.product-input h4 {
+    font-weight: 400;
+    font-size: 22px;
+}
+.product-input input, .product-input textarea {
+    width: 100%;
+    margin: 10px 0;
+    height: 60px;
+    font-size: 18px;
+}
+.short-desc input, .short-desc textarea {
+    height: 210px;
+}
+.short-desc textarea {
+    resize: none;
+}
+.product-input-left, .product-input-right {
+    display: inline-block;
+    width: calc((100% - 30px) / 2);
+}
+.product-input-left h4, .product-input-right h4 {
+    font-weight: 400;
+    font-size: 22px;
+}
+.product-input-right {
+    margin-left: 30px;
+}
+.product-input-left select, .product-input-right select {
+    margin: 20px 0;
+    width: 100%;
+    background-color: white;
+    height: 60px;
+}
+.product-details button {
+    display: block;
+    height: 50px;
+    width: 175px;
+    margin: 50px auto 0;
+    color: white;
+    background-color: rgb(90, 35, 72);
+    font-size: 18px;
+}
+#display-none {
+    display: none;
+}
+/* ------------------------------------- END :: ADD PRODUCT SECTION ------------------------------------- */
+/* ------------------------------------- START :: RESPONSIVE SECTION ------------------------------------- */
+@media only screen and (min-width: 1px) and (max-width: 600px) {
+    .add-product {
+        width: 80%;
+        margin: 75px auto;
+        color: rgb(90, 35, 72);
+    }
+}
+
+/* ------------------------------------- END :: RESPONSIVE SECTION ------------------------------------- */

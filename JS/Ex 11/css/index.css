@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+body {
+    background-color: aqua;
+}
+.clear-fix {
+    clear: both;
+}
+/* ---------------------------------------- Header Section Starts ---------------------------------------- */
+header {
+    height: 70px;
+    text-align: center;
+    font-size: 20px;
+    padding: 15px;
+    background-color: rgb(2, 30, 48);
+    color: #ffffff;
+}
+header i {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 40px;
+}
+header h1 {
+    font-size: 30px;
+    font-weight: 400;
+}
+/* ---------------------------------------- Header Section Starts ---------------------------------------- */
+/* ---------------------------------------- Main Content Section Starts ---------------------------------------- */
+.main-wrapper {
+    background-image: url("https://images5.alphacoders.com/358/thumb-1920-358764.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+}
+.main-content {
+    width: 85%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+/* ---------------------------------------- Post Pane Section Starts ---------------------------------------- */
+.posts-pane {
+    float: left;
+    width: 65%;
+    background-color:rgba(0, 0, 255, 0.2);
+    padding: 30px;
+    margin-bottom: 25px;
+}
+.trip-planner{
+    float: right;
+    height: 400px;
+    width: 33%;
+    padding: 30px;
+    background-color:rgba(0, 0, 255, 0.2);
+}
+.posts-pane h1, .trip-planner h1 {
+    font-weight: 400;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+.posts li {
+    margin-top: 10px;
+}
+.posts li {
+    list-style: none;
+}
+.posts h2 {
+    font-weight: 500;
+    background-color: rgb(2, 30, 48);
+    color: #ffffff;
+    padding: 15px;
+    font-size: 30px;
+}
+.posts p {
+    padding: 10px 27px 30px;
+    background-color: #ffffff;
+    color: rgb(99, 99, 99);
+    font-size: 20px;
+    display: none;
+}
+/* ---------------------------------------- Post Pane Section Ends ---------------------------------------- */
+/* ---------------------------------------- Trip Planner Section Starts ---------------------------------------- */
+.trip-inputs input { 
+    display: block;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px; 
+    font-size: 25px;
+    font-weight: 400;
+    border: 0;
+    outline: none;
+}
+.trip-inputs input::placeholder {
+    color: rgb(206, 206, 206);
+    padding: 10px;
+}
+.travel-modes {
+    float: left;
+    width: calc(100% / 3);
+    height: 50px;
+    border-radius: 20%;
+}
+.input-submit {
+    float: right;
+    height: 50px;
+    width: 40%;
+    border-radius: 20%;
+    margin-top: 20px; 
+}
+.trip-inputs button {
+    font-size: 18px;
+    background-color: rgb(203, 243, 254);
+    color: rgb(103, 107, 108);
+    border: 0;
+}
+.input-submit {
+    width: 35%;
+}
+/* ---------------------------------------- Trip Planner Section Ends ---------------------------------------- */
+
+/* ---------------------------------------- Main Content Section Ends ---------------------------------------- */
+
+/* ---------------------------------------- Responsive Section Starts ---------------------------------------- */
+@media only screen and (max-width:600px) {
+    .posts-pane, .trip-planner {
+        float: none;
+        width: 100%;
+    }
+}
+/* ---------------------------------------- Responsive Section Ends ---------------------------------------- */

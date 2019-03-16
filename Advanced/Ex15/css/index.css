@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+} 
+
+.cities {
+    display: flex;
+    flex-wrap: wrap;
+    width: 700px;
+    height: 70px;
+    background: red;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.city {
+    width: 200px;
+    background: green;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+    <head>
+        <head>
+            <title>Local Storage</title>
+            <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel="stylesheet"/>
+            <link rel = "stylesheet" type = "text/css" href = "css/style.css"/>
+            <link rel = "stylesheet" type = "text/css" href = "css/index.css"/>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        </head>
+    </head>
+    <body>
+        <div class = "wrapper">
+            <!-- ---------------------------- START :: CHAT BOX ---------------------------- -->
+            <div class = "left-user" id = "gladstone">
+                <h1>Gladstone</h1>
+                <div class = "messages"></div>
+                <div class = "input-section">
+                    <textarea class = "user-text-input"></textarea>
+                    <select class = "receiver">
+                        <option value = "abraham">Abraham</option>
+                        <option value = "gladstoneabraham">Gladstone Abraham</option>
+                        <option value = "abrahamgladstone">Abraham Gladstone</option>
+                    </select>
+                    <button class = "user-text-submit">Send</button>
+                </div>
+            </div>
+            <div class = "right-user" id = "abraham">
+                <h1>Abraham</h1>
+                <div class = "messages"></div>
+                <div class = "input-section">
+                    <textarea class = "user-text-input"></textarea>
+                    <select class = "receiver">
+                        <option value = "gladstone">Gladstone</option>
+                        <option value = "gladstoneabraham">Gladstone Abraham</option>
+                        <option value = "abrahamgladstone">Abraham Gladstone</option>
+                    </select>
+                    <button class = "user-text-submit">Send</button>
+                </div>  
+            </div>
+            <div class = "clear-fix"></div>
+            <div class = "left-user" id = "gladstoneabraham">
+                <h1>Gladstone Abraham</h1>
+                <div class = "messages"></div>
+                <div class = "input-section">
+                    <textarea class = "user-text-input"></textarea>
+                    <select class = "receiver">
+                        <option value = "gladstone">Gladstone</option>
+                        <option value = "abraham">Abraham</option>
+                        <option value = "abrahamgladstone">Abraham Gladstone</option>
+                    </select>
+                    <button class = "user-text-submit">Send</button>
+                </div>
+            </div>
+            <div class = "right-user" id = "abrahamgladstone">
+                <h1>Abraham Gladstone</h1>
+                <div class = "messages"></div>
+                <div class = "input-section">
+                    <textarea class = "user-text-input"></textarea>
+                    <select class = "receiver">
+                        <option value = "gladstone">Gladstone</option>
+                        <option value = "abraham">Abraham</option>
+                        <option value = "gladstoneabraham">Gladstone Abraham</option>
+                    </select>
+                    <button class = "user-text-submit">Send</button>
+                </div>  
+            </div>
+            <div class = "clear-fix"></div>
+
+            <button id = "clear">Clear</button>
+            <!-- ---------------------------- ENDS :: CHAT BOX ---------------------------- -->
+        </div>
+        <script src = "js/index.js"></script>
+    </body>
+</html>

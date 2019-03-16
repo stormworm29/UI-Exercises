@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.box {
+    height: 100px;
+    width: 100px;
+    background-color: black;
+}
+@media only screen and ( min-width: 351px ) and ( max-width: 599px ) {
+    .box {
+        background-color: yellow;
+    }
+}
+@media only screen and ( min-width: 1px ) and ( max-width: 350px ) {
+    .box {
+        background-color: green;
+    }
+}

@@ -1,0 +1,43 @@
+@import 'reset';
+@import 'variables';
+@import 'common';
+header {
+    margin-bottom: 10px;
+}
+header, footer {
+    @include layout();
+}
+.all-posts {
+    width: 80%;
+    margin: 0px auto;
+    .left-pane {
+        float: left;
+        width: 65%;
+    }
+    .right-pane {
+        float: right;
+        width: 30%;
+    }
+    @media only screen and (max-width: 600px) {
+    .right-pane, .left-pane {
+        float: none;
+        width: 100%;
+        }
+    }
+}
+.posts {
+    border: 1px solid $postBorderColor;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    .post-headers {
+        padding: 10px;
+        font-size: 15px;
+        background-color: $bgColor;
+        color: $textColor;
+    }
+    .post-content {
+        font-size: 14px;
+        padding: 10px;
+        text-align: justify;
+    }
+}

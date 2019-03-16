@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.clear-fix {
+    clear: both;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+/* ---------------------- START :: Header Section ---------------------- */
+
+.header-section {
+    height: 50px;
+    text-align: center;
+    font-size: 40px;
+    background-color: darkcyan;
+}
+li {
+    display: inline-block;
+    list-style-type: none;
+}
+nav {
+    height: 50px;
+    text-align: center;
+    font-size: 30px;
+}
+/* ---------------------- END :: Header Section ---------------------- */
+/* ---------------------- START :: Body Section ---------------------- */
+
+.body-section {
+    width: 80%;
+    margin: 0 auto;
+    background-color: aqua;
+}
+.body-left-section {
+    float: left;
+    width: 70%;
+    background-color: aliceblue;
+}
+.body-right-section {
+    float: right;
+    width: 28%;
+    background-color: blue;
+}
+.body-section-header {
+    padding: 20px;
+    background-color: bisque;
+}
+.body-section-content {
+    padding: 20px;
+    background-color: greenyellow;
+}
+/* ---------------------- END :: Body Section ---------------------- */
+/* ---------------------- START :: Fixed Section ---------------------- */
+.fixed-content {
+    position: fixed;
+    right: 0;
+    top: 50%;
+}
+.fixed-content button {
+    height: 120px;
+}
+/* ---------------------- END :: Fixed Section ---------------------- */

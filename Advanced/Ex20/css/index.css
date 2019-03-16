@@ -1,0 +1,212 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.clear-fix {
+  clear: both;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.flight-checker {
+  background: #560204;
+  border-bottom-right-radius: 8% 18%;
+  color: #fff;
+  padding: 172px 0px 20px 105px;
+}
+.flight-checker h2 {
+  font-size: 68px;
+  width: 60%;
+  margin-bottom: 10px;
+}
+.flight-checker h3 {
+  font-size: 37px;
+  color: #fedda0;
+}
+
+.from-info, .from-date {
+  display: inline-block;
+  width: 30%;
+  margin-right: 20px;
+}
+.from-info input, .from-date input {
+  width: 100%;
+  height: 40px;
+  font-size: 20px;
+  padding-left: 5px;
+  margin-top: 10px;
+}
+
+.flight-inputs {
+  position: relative;
+  margin: 20px 20px 20px 0;
+}
+
+.flight-inputs-submit {
+  position: absolute;
+  bottom: 0;
+  right: 23%;
+}
+.flight-inputs-submit button {
+  width: 150px;
+  height: 45px;
+  font-size: 25px;
+  background: #fedda0;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+.flight-display {
+  display: flex;
+  width: 84%;
+  margin: 40px auto 0;
+  background: #f8ebeb;
+}
+.flight-display img {
+  flex: 0;
+  height: 85px;
+}
+.flight-display .flight-name {
+  flex: 2;
+  padding: 22px;
+}
+.flight-display .flight-name h2 {
+  font-size: 22px;
+}
+.flight-display .flight-name h3 {
+  font-size: 13px;
+  margin-top: 5px;
+}
+.flight-display .flight-amount {
+  flex: 2;
+  font-size: 20px;
+  text-align: center;
+  padding: 35px 0px 15px;
+}
+.flight-display button {
+  flex: 1;
+  width: 10%;
+  font-size: 20px;
+  background: #560204;
+  color: #fff;
+}
+
+.flight-timings {
+  display: flex;
+  text-align: center;
+  flex: 6;
+  padding: 24px 65px 15px 65px;
+}
+.flight-timings .flight-tracker {
+  flex: 2;
+  font-size: 25px;
+}
+.flight-timings .flight-tracker h3 {
+  font-size: 15px;
+}
+.flight-timings .flight-total-hours {
+  flex: 5;
+  margin: 10px 0 5px;
+  font-size: 13px;
+}
+.flight-timings .flight-total-hours h2 {
+  border-bottom: 1px solid black;
+}
+.flight-timings .flight-tracker {
+  flex: 4;
+}
+
+.flight-animation {
+  position: absolute;
+  top: -100px;
+  right: -350px;
+}
+.flight-animation img {
+  width: 930px;
+  transform: rotate(10deg);
+  animation: flight-anime 5s infinite;
+}
+
+@keyframes flight-anime {
+  0% {
+    transform: rotate();
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate();
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+    <head>
+        <title>Airplane Booking Application</title>
+        <title>Local Storage</title>
+            <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel="stylesheet"/>
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"/>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel = "stylesheet" type = "text/css" href = "css/index.css"/>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment.min.js"></script>
+    </head>
+    <body>
+        <div class = "wrapper">
+            <section class = "flight-checker">
+                <h2>Flying is more easier than ever</h2>
+                <h3>Now, travel at low prices from Chennai International Airport</h3>
+                <div class = "flight-animation">
+                    <img src = "flightImage.png"/>
+                </div>
+                <div class = "flight-inputs">
+                    <div class = "from-info">
+                        <label>Where do you want to fly?</label>
+                        <input type = "text" id = "from-location" list = "places"/>
+                        <datalist id = "places">
+                            <option value = "BOM">
+                                Mumbai (BOM)
+                            </option>
+                            <option value = "DEL">
+                                Delhi (DEl)
+                            </option>
+                        </datalist>
+                    </div>
+                     <div class = "from-date">
+                        <label>When do you want to fly?</label>
+                        <input type = "text" id = "from-date" onfocus = "(this.type ='date')"/>
+                     </div> 
+                     <div class = "flight-inputs-submit">
+                        <button id = "flight-checker-submit">SEARCH</button>
+                     </div>   
+                </div>
+            </section>
+            <section class = "flights-display">
+                
+            </section>
+        </div>
+        <script src = "js/constants.js"></script>
+        <script src = "js/index.js"></script>
+    </body>
+</html>

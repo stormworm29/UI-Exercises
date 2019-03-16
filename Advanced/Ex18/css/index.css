@@ -1,0 +1,49 @@
+/* ----------------------------- START :: CHAT BOX----------------------------- */
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+.left-user, .right-user {
+    position: relative;
+    width: 45%;
+    border: 1px solid lightgreen;
+    height: 400px;
+    margin: 100px 0;
+}
+.left-user .messages, .right-user .messages {
+    height: 300px;
+    overflow-y: scroll;
+}
+.left-user h1, .right-user h1{
+    background: yellow;
+}
+.left-user, .right-user {
+    background: red;
+}
+.right-user {
+    float: right;
+}
+.left-user {
+    float: left;
+}
+.my-message {
+    float: right;
+    background: blue;
+}
+.your-message {
+    float: left;
+    background: green;
+}
+.input-section {
+    position: absolute;
+    bottom: 0;
+    left:0;
+    width: 100%;
+}
+.user-text-input {
+    resize: none;
+}
+#clear {
+    background: red;
+}
+/* ----------------------------- END :: CHAT BOX ----------------------------- */

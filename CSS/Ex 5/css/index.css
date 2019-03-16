@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* --------------------------------- Pop-Up Section Begins Here --------------------------------- */
+.pop-up {
+    position: fixed;
+    top: calc(50% - 150px);
+    left: calc(50% - 400px);
+    width: 800px;
+    height: 300px;
+    background-color: aqua;
+}
+/* --------------------------------- Pop-Up Header Begins Here --------------------------------- */
+.pop-up h1 {
+    text-align: center;
+    background-color: blue;
+    color: white;
+}
+/* --------------------------------- Pop-Up Header Ends Here --------------------------------- */
+/* --------------------------------- Location Picker Begins Here --------------------------------- */
+.location-picker {
+    display: block;
+    padding: 10px;
+    background-color: aquamarine;
+    margin: 10px;
+    padding: 10px;
+}
+.location-picker label ,.location-picker input{
+    display: block;
+    width: 100%;
+    padding: 10px;
+}
+/* --------------------------------- Location Picker Ends Here --------------------------------- */
+/* --------------------------------- Date Picker Begins Here --------------------------------- */
+.date {
+    width: 100%;
+    background-color: aliceblue;
+}
+.date-picker {
+    display: inline-block;
+    width: 45%;
+    background-color: aquamarine;
+    margin: 10px 17px;
+}
+.date-picker label ,.date-picker input{
+    display: block;
+    width: 100%;
+    padding: 10px;
+}
+/* --------------------------------- Date Picker Ends Here --------------------------------- */
+/* --------------------------------- Button Begins Here --------------------------------- */
+.search button {
+    position: absolute;
+    bottom: -40px;
+    right: 0;
+    height: 40px;
+    width: 200px;
+}
+.cancel button {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    padding: 5px;
+    background-color: red;
+    color: white;
+    height: 30px;
+    width: 30px;
+}
+/* --------------------------------- Button Ends Here --------------------------------- */

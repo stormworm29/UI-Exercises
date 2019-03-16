@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+/* -------------------------- Header Section Starts -------------------------- */
+header h2 {
+    padding: 30px;
+    background-color: rgb(59, 28, 103);
+    color: white;
+    font-weight: 400;
+}
+/* -------------------------- Header Section Ends -------------------------- */
+/* -------------------------- Friend List Section Starts -------------------------- */
+#friend-list-section {
+    width: 85%;
+    margin: 30px auto;
+}
+#friend-list-section li {
+    display: inline-block;
+    width: calc((100% - 30px) / 3);
+    min-width: 300px;
+    height: 85px;
+    list-style: none;
+    background-color: rgb(86, 116, 203);
+    margin: 5px;
+    padding: 8px;
+}
+.friend-list-image , .friend-list-content {
+    display: inline-block;
+    vertical-align: top;
+}
+.friend-list-image img {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.friend-list-content {
+    color: #ffffff;
+    font-weight: 300;
+    margin-top: 15px;
+    font-size: 14px;
+}
+.friend-list-content h3 {
+    font-weight: 400;
+}
+.friend-list-content p {
+    overflow-wrap: break-word;
+}
+/* -------------------------- Friend List Section Ends -------------------------- */
+/* -------------------------- Responsive Edits Section Starts -------------------------- */
+@media only screen and (max-width:730px) {
+    #friend-list-section li {
+        width: 100%;
+        min-width: 300px;
+    }
+}
+@media only screen and (min-width:730px) and (max-width:1200px) {
+    #friend-list-section li {
+        width: calc((100% - 20px) / 2);
+        min-width: 300px;
+    }
+}
+/* -------------------------- Responsive Edits Section Ends -------------------------- */

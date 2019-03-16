@@ -1,0 +1,134 @@
+@import 'reset';
+@import 'variables';
+@import 'common';
+body {
+    overflow-x: hidden;
+}
+.flight-checker {
+    background: $mainThemeColor;
+    border-bottom-right-radius: 8% 18%;
+    color: $mainFontColor;
+    padding: 172px 0px 20px 105px;
+    h2 {
+        font-size: 68px;
+        width: 60%;
+        margin-bottom: 10px;
+    }
+    h3 {
+        font-size: 37px;
+        color: rgb(254,221,160);
+    }
+}
+.from-info ,.from-date {
+    display: inline-block;
+    width: 30%;
+    margin-right: 20px;
+    input {
+        width: 100%;
+        height: 40px;
+        font-size: 20px;
+        padding-left: 5px;
+        margin-top: 10px;
+    }
+}
+.flight-inputs {
+    position: relative;
+    margin: 20px 20px 20px 0;
+}
+.flight-inputs-submit {
+    position: absolute;
+    bottom: 0;
+    right: 23%;
+    button {
+        width: 150px;
+        height: 45px;
+        font-size: 25px;
+        background: rgb(254,221,160);
+        border: 0;
+        outline: 0;
+        cursor: pointer;
+    }
+}
+
+.flight-display {
+    display: flex;
+    width: 84%;
+    margin: 40px auto 0;
+    background: rgb(248, 235, 235);
+    img {
+        flex: 0;
+        height: 85px;
+    }
+    .flight-name {
+        flex: 2;
+        padding: 22px;
+        h2 {
+            font-size: 22px;
+        }
+        h3 {
+            font-size: 13px;
+            margin-top: 5px;
+        }
+    }
+    .flight-amount {
+        flex: 2;
+        font-size: 20px;
+        text-align: center;
+        padding: 35px 0px 15px;
+
+    }
+    button {
+        flex: 1;
+        width: 10%;
+        font-size: 20px;
+        background: $mainThemeColor;
+        color: $mainFontColor;
+    }
+}
+
+.flight-timings {
+    display: flex;
+    text-align: center;
+    flex: 6;
+    padding: 24px 65px 15px 65px;
+    .flight-tracker {
+        flex: 2;
+        font-size: 25px;
+        h3 {
+            font-size: 15px;
+        }
+    }
+    .flight-total-hours {
+        flex: 5;
+        margin: 10px 0 5px;
+        font-size: 13px;
+        h2 {
+            border-bottom: 1px solid black;
+        }
+    }
+    .flight-tracker {
+        flex: 4;
+    }
+}
+
+.flight-animation {
+    position: absolute;
+    top: -100px;
+    right: -350px;
+    img {
+        width: 930px;
+        transform: rotate(10deg);
+        animation: flight-anime 5s infinite;
+    } 
+}
+@keyframes flight-anime {
+    0%{
+        transform: rotate();
+    }
+    50% {
+        transform: rotate(5deg)
+    }
+    100% {
+        transform: rotate();
+    }
+}

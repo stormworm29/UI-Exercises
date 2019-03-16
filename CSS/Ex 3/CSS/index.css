@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.wrapper {
+    background-color: rgb(233, 233,233);
+}
+/* --------------------------- Header Styles Starts --------------------------- */
+header {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header h1 {
+    width: 60%;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+nav {
+    height: 40px;
+}
+nav li {
+    list-style: none;
+    padding: 10px 20px;
+    font-size: 22px;
+    display: inline-block;
+}
+nav li:hover {
+    color: red;
+    cursor: pointer;
+}
+/* --------------------------- Header Styles Ends --------------------------- */
+/* --------------------------- Main Image Starts --------------------------- */
+.main-img {
+    padding-top: 10px;
+    display: inline-block;
+    height: 400px;
+    width: 100%;
+}
+/* --------------------------- Main Image Ends --------------------------- */
+/* --------------------------- Cities List Starts --------------------------- */
+.cities {
+    padding-top: 60px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.city {
+    margin: 20px;
+    display: inline-block;
+    width: 300px;
+    background-color: white;
+}
+.city-images {
+    width: 100%;
+}
+.city-header {
+    font-size: 15px;
+}
+.city-content {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    padding: 15px 14px 25px;
+    font-size: 11px;
+    width: 100%;
+}
+.city-content h4 + p {
+    padding-top: 5px;
+}
+/* --------------------------- Cities List Ends --------------------------- */
+/* --------------------------- About Section Starts --------------------------- */
+.about {
+    padding: 0px 30px 30px 30px;
+}
+.about-heading {
+    text-align: center;
+    font-size: 50px;
+}
+.about-content {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 18px 126px;
+    text-align: justify;
+    font-size: 21.3px;
+}
+/* --------------------------- About Section Ends --------------------------- */
+/* --------------------------- Footer Section Starts --------------------------- */
+footer {
+    background-color: rgb(40, 4, 52);
+    color: white;
+    text-align: center;
+}
+.footer-header {
+    font-size: 20px;
+    color: rgb(247,229,59);
+    padding: 10px 0px;
+}
+.footer-section {
+    text-align: left;
+    width: 370px;
+    font-size: 16px;
+    display: inline-block;
+    margin: 70px;
+}
+/* --------------------------- Footer Section Ends --------------------------- */

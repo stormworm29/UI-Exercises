@@ -1,0 +1,127 @@
+/* --------------------------------- START :: HEADER --------------------------------- */
+header {
+    background: rgb(203, 43, 80);
+    padding: 15px 0;
+    text-align: center;
+    color: white;
+}
+header i {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    font-size: 25px;
+    color: white;
+}
+/* --------------------------------- END :: HEADER --------------------------------- */
+/* --------------------------------- START :: BODY --------------------------------- */
+.main-content {
+    width: 67%;
+    margin: 20px auto 0;
+    height: 700px;
+}
+.main-content-title h2{
+    font-size: 43px;
+    font-weight: 400;
+    margin: 10px 0 0;
+}
+.cartoons {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.cartoon {
+    position: relative;
+    height: 270px;
+    width: 268px;
+    margin: 14px 0;
+}
+.cartoon img {
+    width: 100%;
+    height: 100%;
+}
+.cartoon-content {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+}
+.cartoon-content h4, .cartoon-content p{
+    color: #fff;
+}
+.cartoon-content h4{
+    font-weight: 400;
+    font-size: 20px;
+}
+.cartoon-content p {
+    font-weight: 300;
+    font-size: 11px;
+}
+/* --------------------------------- END :: BODY --------------------------------- */
+/* --------------------------------- START :: MENUBAR --------------------------------- */
+.menu-bar {
+    position: absolute;
+    left: -310px;
+    top: 59px;
+    width: 310px;
+    height: 662px;;
+    background: rgb(203, 43, 80);
+    padding: 52px;
+    border-top: 0.2px #fff solid;
+    transition: 1s;
+}
+.menu-bar li {
+    color: #fff;
+    list-style: none;
+    font-size: 24px;
+    font-weight: 300;
+    margin: 20px 0;
+}
+.menu-toggle {
+    left: 0;
+}
+/* --------------------------------- END :: MENUBAR --------------------------------- */
+/* --------------------------------- START :: ROCKET --------------------------------- */
+.rocket {
+    position: absolute;
+    right: 50px;
+    bottom:20px;
+}
+.rocket-animation {
+    animation: animerocket 5s ;
+}
+@keyframes animerocket {
+    0% {
+        transform: translate(0, 0) rotate(0deg) ;
+    }
+    17% {
+        transform: translate(0,-400px);
+    }
+    25% {
+        transform: translate(0,-500px) rotate(-90deg);
+    }
+    45% {
+        transform: translate(-1000px,-500px) rotate(-90deg);
+    }
+    50% {
+        transform: translate(-1100px,-500px) rotate(-180deg);
+    }
+    70% {
+        transform: translate(-1100px, -100px)rotate(-180deg);
+    }
+    75% {
+        transform: translate(-1100px, 0px) rotate(-270deg);
+    }
+    95% {
+        transform: translate(0px, 0px) rotate(-270deg);
+    }
+    100% {
+        transform: translate(0, 0) rotate(-360deg) ;
+    }
+}
+.rocket img {
+    height: 100px;
+
+}
+/* --------------------------------- END :: ROCKET --------------------------------- */

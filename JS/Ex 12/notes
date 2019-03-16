@@ -1,0 +1,238 @@
+HTML:
+
+<a> target attribute.
+<span>,<div>
+
+CSS:
+
+:nth-child()
+A B{
+    // B is any(*) child of A.
+}
+A > B{
+    // B is the direct child of A.
+}
+A,B{
+    , --> is an OR operator.
+}
+AB{
+    A,B in the same element.
+}
+A + B{
+    immediate younger siblings of the same parent
+}
+A ~ B{
+    All younger siblings of the same parent
+}
+* {
+
+}
+A:action {
+
+}
+
+h1h2   is not possibles( no two tags can be directly used together ).
+<tag><tag> X
+<class/id><tag> X
+
+CSS Box Model
+1. Width
+2. Height
+3. Content
+4. Padding
+5. Border
+6. Margin
+
+
+
+box-sizing : border-box / content-box ; 
+In content box,
+width = width + padding-left + padding-right + border-left + border-right;
+height = height + padding-top + padding-bottom + border-top + border-bottom;
+
+default border color is the color of the text.
+default of 4px margin with inline-block display property
+
+margin =0;   // removes default margins
+
+ul has a default padding of 40px.
+
+// Resetting the defaults
+* {
+    box-sizing : border-box;
+    margin : 0;
+    padding : 0;
+}
+
+Padding:
+case 1: H:x,V:x
+padding: x;
+case2: H:x,V:y 
+padding: x y;
+case3: HT:x, HB:y, V:z
+padding: x y z;
+case4: all are diff
+padding: top right bottom left;
+
+margin: auto with a width will align it in the center
+
+
+li:hover {
+
+}
+
+Background Entities:
+    Background-image: url("...")/linear-gradient("...");
+    Background-size: contain/cover;
+    Background-repeat: no-/repeat-x/repeat-y/repeat/space/round;
+    Background-position:top;/bottom/right/left/center; right&top/bottom, left&top/bottom;
+    Background-color: blue;
+    Background-clip: content-box/padding-box/border-box;
+Text:
+    text-transform: lower/upper/Capitalize/full-width;
+    line-height: <value>
+    letter-spacing: <value>
+
+
+overflow: auto/hidden;
+cursor: pointer;
+visibility: hidden;
+display: none/block/inline/inline-block;
+
+position:
+    static
+    fixed
+    relative
+    absolute
+
+
+calc() function for math calculation.
+rgba() a--> for translucent element.
+
+Media Type:
+@media not/only mediatype and (media-feature and/or/not media-feature)
+{
+    <css Code>;
+}
+media-types:
+    screen
+    speech
+    print
+    all
+media-feature:
+    max-width
+    min-width
+    width
+    orientation
+    aspect-ratio
+
+JS
+mockaro -- > dummy data generator
+document:
+    getElementById
+    getElementsByClassName
+    getElementsByName
+    getElementsByTagName
+    createElement
+    createTextNode
+    createAttribute
+    append
+document fragment
+
+
+Pre-Defined Function:
+    Date()
+        getDate()
+        getMonth()
+        getFullYear()
+.style.display = "none";
+
+
+Jquery :
+    Starts with a $
+    $(.class-name).html()
+    $(.class-name).text()
+    $(.class-name).hide()
+    $(.class-name).show()
+    $(.class-name).slideDown()
+    $(.class-name).slideUp()
+    $(.class-name).fadeOut()
+    $(.class-name).fadeIn()
+    $(.class-name).addClass()
+    $(.class-name).removeClass()
+    $(.class-name).toggleClass()
+    $(.class-name).append()
+    $(.class-name).prepend()
+    $(.class-name).before()
+    $(.class-name).after()
+    $(.class-name).remove()
+    $(.class-name).empty()
+    $(.class-name).attr(attribute, value)
+    $(.class-name).attr(attribute)
+    $(.class-name).prop(attribute) // for Custom Attribute
+    $(.class-name).click()
+    $(.class-name).on("click", function() {
+
+    })
+    $(.class-name).on("click", inner-elements, function() {
+        
+    })
+    $.each(array-element, function(index, val) {
+
+    }))
+    $.each(obj-element, function(key, val) {
+
+    }))
+    $(.class-name).css(property, value)     {} input can also be an object
+    $(div:visible)
+    $(document).ready(function() {
+
+    });
+    $("input").val()
+
+Regex:
+    let regex = /(word)/(g/i/m)
+    let regex = new RegExp('word', '(i/g/m)')
+    Quantifiers:
+        ^ -- start with
+        $ -- end with
+        . -- (meta-character)
+        + -- 1 or 2 ..
+        * -- 0 or 1 ..
+        ? -- 0 or 1
+        / -- for character in quantifier
+        a{2} -- accepts 2 a's
+        a{2,5} -- accepts a's between 2 and 5
+        a{2,} -- accepts a's grater than 2 
+    Brackets:
+        [..] -- direct patterns and ranges
+        [^..] -- not of []
+        [-]
+        [^-]
+        (..) -- directly the string
+        (..|..) -- or operation in ()
+    Meta Character
+        .
+        \w word
+        \W non-word
+        \s white space
+        \S non white space
+        \b begining or end of the word
+
+
+ex1:
+    [^_]\w[^_]+ char and num
+    ([0-9]{3}\-){2}[0-9]{4}$  phone number
+
+event.preventDefault()
+Event Propagation
+    Event Bubbling
+    Event Capturing
+event.stopPropagation()
+    
+
+
+(function() {
+	return "Hello";
+
+})()

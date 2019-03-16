@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* ------------------------------- Header Section Starts ------------------------------- */
+header {
+    text-align: center;
+}
+nav {
+    background-color: #4d41f4;
+    color: #e2f442;
+}
+nav > ul > li {
+    display: inline-block;
+}
+nav li {
+    list-style: none;
+    cursor: pointer;
+}
+.nav-main {
+    display: inline-block;
+}
+.nav-main > li {
+    padding: 15px;
+}
+.nav-sub {
+    display: none;
+    position: absolute;
+    text-align: left;
+    background-color: green;
+}
+.nav-sub > li {
+    padding: 15px;
+}
+.nav-main li:hover .nav-sub {
+    display: block;
+}
+/* ------------------------------- Header Section Ends ------------------------------- */

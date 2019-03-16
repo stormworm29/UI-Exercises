@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Enrollment SPA
+        </title>
+        <link rel = "stylesheet" type = "text/css" href = "css/index.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class = "wrapper">
+            <!-- ----------------------------- Choose Department Section Starts ----------------------------- --> 
+            <div id = "btn-group" class = "view">
+                <h1>Departments</h1>
+                <button name = "dept" onclick = "selectDept('ECE')">ECE</button>
+                <button name = "dept" onclick = "selectDept('CSE')">CSE</button>
+                <button name = "dept" onclick = "selectDept('IT')">IT</button>
+            </div>
+            <!-- ----------------------------- Choose Department Section Ends ----------------------------- -->
+            <!-- ----------------------------- Enroll Students Section Starts ----------------------------- -->
+            <div id = "enroll-page" class = "view">
+                <header>
+                    <h1>Welcome to <span id = "department"></span> </h1>
+                </header>
+                <div class = "enroll-form">
+                    <div class = "enroll-fields">
+                        <label>HOD: <span id = "hod"></span></label>
+                    </div>
+                    <div class = "enroll-fields">
+                        <label>Courses: <span id = "courses"></span></label>
+                    </div>
+                    <div class = "enroll-fields">
+                        <label>Name: </label><input type = "text" id = "username" placeholder = "Enter your Name"/>
+                    </div>
+                    <div class = "enroll-fields">
+                        <label>CGPA: </label><input type = "number" id = "cgpa" placeholder = "Enter Your CGPA"/>
+                    </div>
+                    <div id = "lab">
+                        <label>Lab: </label><input type = "text" id = "lab-data" placeholder = "Enter Your Lab"/>
+                    </div>
+                    <button onclick = "enroll()">Submit</button>
+                </div>
+            </div>
+            <!-- ----------------------------- Enroll Students Section Ends ----------------------------- -->
+            <!-- ----------------------------- Post-Enrolled Actions Section Starts ----------------------------- -->
+            <div id = "thankyou" class = "view">
+                <header>
+                    Welcome to <span id = "thank-name"></span> 
+                </header>
+                <p> You are enrolled department is <span id = "thank-dept-name"></span> with a CGPA of <span id = "thank-cgpa"></span><span id = "thank-lab">with a lab of <span id = "lab-value"></span></p>
+            </div>
+            <div id = "invalid" class = "view">
+                <h1><span id = "error-log"></span> Invalid</h1>
+            </div>
+            <!-- ----------------------------- Post-Enrolled Actions Section Starts ----------------------------- -->
+        </div>
+        <script src = "js/index.js"></script>
+    </body>
+</html>

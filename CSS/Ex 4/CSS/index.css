@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+.wrapper {
+    font-family: 'Lato', sans-serif;
+}
+/* --------------------------- Header and Footer Section Starts -------------------- */
+header, footer {
+    background-color: rgb(205, 11, 36);
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+.header {
+    margin-bottom: 10px;
+}
+/* --------------------------- Header Section Ends --------------------------- */
+/* --------------------------- Posts Section Starts --------------------------- */
+.all-posts {
+    width: 80%;
+    margin: 0px auto;
+}
+.left-pane {
+    float: left;
+    width: 65%;
+}
+.posts {
+    border: 1px solid rgb(212, 212, 212);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.post-headers {
+    padding: 10px;
+    font-size: 15px;
+    background-color: rgb(205, 11, 36);
+    color: white;
+}
+.post-content {
+    font-size: 14px;
+    padding: 10px;
+    text-align: justify;
+}
+.right-pane {
+    float: right;
+    width: 30%;
+}
+.clear {
+    clear: both;
+}
+/* --------------------------- Posts Section Ends --------------------------- */
+
+

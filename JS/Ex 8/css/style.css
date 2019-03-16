@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+.clear-fix {
+    clear: both;
+}
+li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+select {
+    font-size: 16px;
+}
+/* --------------------------  START :: HEADER -------------------------- */
+header {
+    background-color: rgb(87, 26, 68);
+    color: rgb(239, 179, 44);
+    font-size: 18px;
+    height: 105px;
+}
+header a {
+    color: rgb(239, 179, 44);
+}
+.header-logo {
+    float: left;
+    font-size: 20px;
+    padding: 35px;
+    margin-left: 3%;
+}
+.header-logo i {
+    font-size: 35px;
+}
+.header-logo label {
+    margin-bottom: 10px;
+    font-weight: 300;
+    font-size: 24px;
+    cursor: pointer;
+}
+nav {
+    float: right;
+    padding: 43px;
+    margin-right: 1%;
+}
+nav li {
+    display: inline-block;
+    list-style: none;
+    text-align: right;
+    margin: 0 20px;
+}
+nav a {
+    color: rgb(239, 179, 44);
+}
+/* --------------------------  END :: HEADER -------------------------- */
+/* --------------------------  START :: FOOTER -------------------------- */
+footer {
+    background-color: rgb(87, 26, 68);
+    padding: 30px;
+}
+.follow-us {
+    float: left;
+}
+.footer-logo {
+    float: right;
+    color: rgb(239, 179, 44);
+    font-size: 20px;
+    margin-top: 6px;
+    cursor: pointer;
+}
+.footer-logo i {
+    font-size: 23px;
+}
+.footer-logo label {
+    cursor: pointer;
+}
+.follow-us a {
+    color: rgb(239, 179, 44);
+}
+.follow-us i {
+    font-size: 25px;
+}
+.follow-us div {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    border-radius: 50%;
+    color: white;
+    margin: 0 5px;
+}
+.follow-us .facebook-logo {
+    background-color: rgb(60, 90, 150);
+}
+.follow-us .twitter-logo {
+    background-color: rgb(89, 173, 235);
+}
+.follow-us .instagram-logo {
+    background-color: rgb(107, 47, 176);
+}
+.follow-us i {
+    margin-top: 5px;
+}
+/* --------------------------  END :: FOOTER -------------------------- */
+/* --------------------------  START :: RESPONSIVE -------------------------- */
+@media only screen and (min-width:1px)  and (max-width:600px) {
+    header {
+        height: auto;
+    }
+    .header-logo {
+        float: none;
+        text-align: center;
+        padding: 15px;
+    }
+    nav {
+        float: none;
+        color: rgb(239, 179, 44);
+        padding: 15px;
+        text-align: center;
+    }
+    .follow-us, .footer-logo {
+        float: none;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+/* --------------------------  END :: RESPONSIVE -------------------------- */

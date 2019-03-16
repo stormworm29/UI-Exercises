@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  font-family: "Lato", sans-serif;
+}
+
+.clear {
+  clear: both;
+}
+
+header {
+  margin-bottom: 10px;
+}
+
+header, footer {
+  background-color: #cd0b24;
+  text-align: center;
+  padding: 10px;
+  color: #fff;
+}
+
+.all-posts {
+  width: 80%;
+  margin: 0px auto;
+}
+.all-posts .left-pane {
+  float: left;
+  width: 65%;
+}
+.all-posts .right-pane {
+  float: right;
+  width: 30%;
+}
+@media only screen and (max-width: 600px) {
+  .all-posts .right-pane, .all-posts .left-pane {
+    float: none;
+    width: 100%;
+  }
+}
+
+.posts {
+  border: 1px solid #d4d4d4;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.posts .post-headers {
+  padding: 10px;
+  font-size: 15px;
+  background-color: #cd0b24;
+  color: #fff;
+}
+.posts .post-content {
+  font-size: 14px;
+  padding: 10px;
+  text-align: justify;
+}
+
+/*# sourceMappingURL=index.css.map */
